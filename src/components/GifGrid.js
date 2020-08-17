@@ -7,12 +7,7 @@ import { useFetchGift } from '../hooks/useFetchGift';
 export const GifGrid = ( { category } ) => {
    
     const {loading, data} = useFetchGift(category);
-    console.log(loading);
-    console.log(data);
-
-    
-  
-
+   
     return (
         <>
         { loading && <p>Loading...</p> }
